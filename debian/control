@@ -1,0 +1,21 @@
+Source: rust-stage0
+Section: devel
+Priority: optional
+Maintainer: Zygmunt Krynicki <zkrynicki@gmail.com>
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 9.2)
+
+Package: rust-stage0
+Architecture: amd64 
+Depends: ${misc:Depends}
+Description: Binary snapshots required to build Rust from source
+ Rust is a curly-brace, block-structured expression language. It visually
+ resembles the C language family, but differs significantly in syntactic and
+ semantic details. Its design is oriented toward concerns of “programming in
+ the large”, that is, of creating and maintaining boundaries – both abstract
+ and operational – that preserve large-system integrity, availability and
+ concurrency. 
+ .
+ The rust compiler is written in rust itself. This package contains binary
+ snapshots of rust required to build rust from source. It contains binary blobs
+ published by the upstream rust project.
